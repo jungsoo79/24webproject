@@ -1,0 +1,27 @@
+
+QPushButton {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #6a11cb, stop:1 #2575fc);
+    color: white;
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #5a10c9;
+}
+
+QFrame {
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    background-color: #fefefe;
+}
+
+QLabel {
+    font-size: 11pt;
+}
+
+QComboBox, QDateEdit {
+    border: 1px solid #cccccc;
+    padding: 4px;
+    border-radius: 5px;
+}

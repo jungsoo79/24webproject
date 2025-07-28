@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>XBee 관리 시스템</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="mainLayout">
+    <item>
+     <widget class="QFrame" name="sidebar">
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <layout class="QVBoxLayout" name="sidebarLayout">
+       <item>
+        <layout class="QHBoxLayout" name="userLayout">
+         <item>
+          <widget class="QLabel" name="label_welcome">
+           <property name="text">
+            <string>환영합니다!</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="logout_button">
+           <property name="text">
+            <string>로그아웃</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="logoLabel">
+         <property name="text">
+          <string>XBee Config</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_port">
+         <property name="text">
+          <string>PORT</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_port"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_status">
+         <property name="minimumSize">
+          <size>
+           <width>12</width>
+           <height>12</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>12</width>
+           <height>12</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_baudrate">
+         <property name="text">
+          <string>BAUDRATE</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_baudrate_main"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="main_refresh_button">
+         <property name="minimumSize">
+          <size>
+           <width>180</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>새로고침</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="main_connect_button">
+         <property name="minimumSize">
+          <size>
+           <width>180</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>연결</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="disconnect_port_button">
+         <property name="minimumSize">
+          <size>
+           <width>180</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>연결 해제</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="xbee_add_button">
+         <property name="minimumSize">
+          <size>
+           <width>180</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>장치 추가</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="xbee_edit_button">
+         <property name="minimumSize">
+          <size>
+           <width>180</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>장치 편집</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="backup_button">
+         <property name="minimumSize">
+          <size>
+           <width>180</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>데이터 조회</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="profile_button">
+         <property name="minimumSize">
+          <size>
+           <width>180</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>내 정보</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="rightLayout">
+      <item>
+       <layout class="QHBoxLayout" name="headerLayout">
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_device_area"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
