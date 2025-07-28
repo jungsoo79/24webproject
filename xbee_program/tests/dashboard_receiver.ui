@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReceiverDashboard</class>
+ <widget class="QWidget" name="ReceiverDashboard">
+  <layout class="QVBoxLayout" name="main_layout">
+   <item>
+    <layout class="QHBoxLayout" name="top_layout">
+     <item><widget class="QLabel" name="device_label"><property name="text"><string>장치 선택:</string></property></widget></item>
+     <item><widget class="QComboBox" name="device_combobox"/></item>
+     <item><widget class="QLabel" name="date_label"><property name="text"><string>날짜:</string></property></widget></item>
+     <item><widget class="QDateEdit" name="date_edit"><property name="calendarPopup"><bool>true</bool></property></widget></item>
+     <item><widget class="QPushButton" name="refresh_button"><property name="text"><string>새로고침</string></property></widget></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="body_layout">
+     <item>
+      <widget class="QTableWidget" name="tableWidget_data"/>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="graph_layout">
+       <item><widget class="QWidget" name="temp_graph" native="true"/></item>
+       <item><widget class="QWidget" name="current_graph" native="true"/></item>
+       <item><widget class="QWidget" name="tilt_graph" native="true"/></item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

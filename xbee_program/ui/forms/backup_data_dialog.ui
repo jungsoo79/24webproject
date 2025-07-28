@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BackupDataDialog</class>
+ <widget class="QDialog" name="BackupDataDialog">
+  <property name="windowTitle">
+   <string>백업 데이터 조회</string>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>950</width>
+    <height>600</height>
+   </size>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   
+   <!-- 장치 + 날짜 선택 -->
+   <item>
+    <layout class="QHBoxLayout" name="topFilterLayout">
+     <!-- 장치 선택 -->
+     <item>
+      <widget class="QLabel" name="label_serial">
+       <property name="text">
+        <string>장치 선택:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_serial"/>
+     </item>
+
+     <!-- 날짜 선택 -->
+     <item>
+      <widget class="QLabel" name="label_date">
+       <property name="text">
+        <string>날짜:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="dateEdit_filter">
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+
+     <!-- 조회 버튼 -->
+     <item>
+      <widget class="QPushButton" name="button_filter">
+       <property name="text">
+        <string>조회</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+   <!-- 테이블 -->
+   <item>
+    <widget class="QTableWidget" name="tableWidget_data">
+    <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+    </sizepolicy>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustToContents</enum>
+    </property>
+    </widget>
+   </item>
+
+   <!-- 하단 버튼 -->
+   <item>
+    <layout class="QHBoxLayout" name="bottomButtonLayout">
+     <item>
+      <widget class="QPushButton" name="button_send">
+       <property name="text">
+        <string>미전송 데이터 전송</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="spacer1">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button_close">
+       <property name="text">
+        <string>닫기</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

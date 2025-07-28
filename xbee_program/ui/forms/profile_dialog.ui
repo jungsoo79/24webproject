@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProfileDialog</class>
+ <widget class="QDialog" name="ProfileDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>내 정보</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_username"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_email"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_phone"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_company"/>
+   </item>
+   <item>
+    <widget class="QLabel">
+     <property name="text">
+      <string>내 장치 목록</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QListWidget" name="device_listWidget"/>
+   </item>
+   <item>
+    <widget class="QPushButton" name="close_button">
+     <property name="text">
+      <string>닫기</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

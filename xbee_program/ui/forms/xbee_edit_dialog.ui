@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>XbeeOptionDialog</class>
+ <widget class="QDialog" name="XbeeOptionDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>463</width>
+    <height>699</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>XBee 설정</string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <item>
+    <widget class="QLabel" name="titleLabel">
+     <property name="text">
+      <string>XBee 설정 관리</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignHCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_port">
+       <property name="text">
+        <string>PORT</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="comboBox_port"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_baudrate">
+       <property name="text">
+        <string>BAUDRATE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="comboBox_baudrate"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QTextEdit" name="textEdit_status"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="settingsGrid">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_ch">
+       <property name="text">
+        <string>채널 (CH)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEdit_ch"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_id">
+       <property name="text">
+        <string>PAN ID</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEdit_id"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_dh">
+       <property name="text">
+        <string>DH</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lineEdit_dh"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_dl">
+       <property name="text">
+        <string>DL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="lineEdit_dl"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_ce">
+       <property name="text">
+        <string>Coordinator Enable</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QComboBox" name="comboBox_ce"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_ps">
+       <property name="text">
+        <string>Micro Auto Start</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QComboBox" name="comboBox_ps"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_ap">
+       <property name="text">
+        <string>API Mode</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QComboBox" name="comboBox_ap"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_bd">
+       <property name="text">
+        <string>Baudrate (BD)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QComboBox" name="comboBox_bd"/>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_d1">
+       <property name="text">
+        <string>D1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QComboBox" name="comboBox_d1"/>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_p1">
+       <property name="text">
+        <string>P1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QComboBox" name="comboBox_p1"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item>
+      <widget class="QPushButton" name="button_refresh">
+       <property name="text">
+        <string>새로고침</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button_connect">
+       <property name="text">
+        <string>연결</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button_disconnect">
+       <property name="text">
+        <string>해제</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="bottomLayout">
+     <item>
+      <widget class="QPushButton" name="button_show">
+       <property name="text">
+        <string>설정 보기</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button_reset">
+       <property name="text">
+        <string>초기화</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button_change">
+       <property name="text">
+        <string>적용</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
